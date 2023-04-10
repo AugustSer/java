@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <link rel="stylesheet" href="media/css/style.css">
+</head>
+<body class="">
+
+<div class="parent">
+    <div class="child1">
+        <div class="titleAndButton">
+            <h1>Пятнашки</h1>
+            <button id="game" class="game">Новая игра</button>
+            <br>
+            <br>
+        </div>
+
+
+        <div id="result" class="result">
+            Время: <span class="time-text"></span>
+            <br>
+            Ходов: <span class="move-text"></span>
+        </div>
+
+
+        <!-- Сложность -->
+        <div id="difficulty" class="difficulty">
+            Выберите уровень:
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-one" value='3' checked>
+            <label for="game-difficulty-one">3x3</label>
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-two" value='4'>
+            <label for="game-difficulty-two">4x4</label>
+            <br>
+            <input type="radio" name="game-difficulty" id="game-difficulty-three" value='5'>
+            <label for="game-difficulty-three">5x5</label>
+        </div>
+    </div>
+
+
+
+
+    <div class="child2">
+        <!-- Игра -->
+        <div class="field" id="field"><button id="game2" class="game2">Рестарт</button></div>
+    </div>
+
+
+    <!--  <div class="message">'Вы собрали паззл за '+ gameTime +' секунд и '+ moveCounter + ' ходов</div>-->
+
+
+
+
+</div>
+
+<script src="media/css/app.js" defer></script>
+
+</body>
+</html>
